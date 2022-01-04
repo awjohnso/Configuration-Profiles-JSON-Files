@@ -1,0 +1,66 @@
+{
+	"title": "com.apple.MCX",
+	"description": "This payload describes a grab bag of settings along with Energy Saver and Timezone information.",
+	"properties": {
+        "EnableGuestAccount": {
+            "title": "Enable Guest Account",
+            "description": "Enable the Guest account.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableGuestAccount": {
+            "title": "Disable Guest Account",
+            "description": "Disable the Guest Account.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableLocationServices": {
+            "title": "Disable Location Services",
+            "description": "Force Disable Location Services.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceInternetSharingOff": {
+            "title": "force Internet Sharing Off",
+            "description": "Force Internet Sharing to Off.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableGuestSharedFolders": {
+            "title": "Disable Guest Shared Folders",
+            "description": "",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

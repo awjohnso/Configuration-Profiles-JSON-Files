@@ -1,0 +1,30 @@
+{
+	"title": "com.fetchsoftworks.Fetch.License",
+	"description": "Fetch Campus Licensing",
+	"properties": {
+        "RegistrantName": {
+            "title": "Registrant Name",
+            "description": "Institution registered to.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SerialNumber": {
+            "title": "Serial Number",
+            "description": "Serial Number.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        }
+	}
+}

@@ -1,0 +1,126 @@
+{
+	"title": "com.apple.SetupAssistant.managed",
+	"description": "The payload for configuring setup-assistant settings.",
+	"properties": {
+        "SkipTrueTone": {
+            "title": "Skip True Tone",
+            "description": "If true, skips the True Tone Display window. Default: false.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipAppearance": {
+            "title": "Skip Appearance",
+            "description": "If true, skips the Choose Your Look window. Default: false.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipiCloudStorageSetup": {
+            "title": "Skip iCloud Storage Setup",
+            "description": "If true, skips the iCloud Storage window. Default: false.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipAccessibility": {
+            "title": "Skip Accessibility",
+            "description": "Default: false.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipSiriSetup": {
+            "title": "Skip Siri Setup",
+            "description": "If true, skips the Siri setup window. Default: false.",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipPrivacySetup": {
+            "title": "Skip Privacy Setup",
+            "description": "If true, skips the Privacy consent window. Default: false.",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipUnlockWithWatch": {
+            "title": "Skip Unlock With Watch",
+            "description": "Default: false. Default: false.",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipTouchIDSetup": {
+            "title": "Skip Touch ID Setup",
+            "description": "If true, skips the Touch ID setup window. Default: false.",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipScreenTime": {
+            "title": "Skip Screen Time",
+            "description": "If true, skips the Screen Time window. Default: false.",
+            "property_order": 45,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SkipCloudSetup": {
+            "title": "Skip Cloud Setup",
+            "description": "If true, skips the Apple ID setup window. Default: false.",
+            "property_order": 50,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

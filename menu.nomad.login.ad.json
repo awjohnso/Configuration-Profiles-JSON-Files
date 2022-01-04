@@ -1,0 +1,895 @@
+{
+	"title": "menu.nomad.login.ad",
+	"description": "Configures NoMAD Login settings",
+	"properties": {
+        "UserInputTitle": {
+            "title": "User Input Title",
+            "description": "Title for the UserInput mechanism. Version 1.3+",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "CreateAdminIfGroupMember": {
+            "title": "Group Membership to Create Admin Users",
+            "description": "List of groups that should have its members created as local administrators. Version: 1.2+",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "SecureTokenManagementEnableOnlyAdminUsers": {
+            "title": "Enable Only Admin User",
+            "description": "If enabled, the SecureToken service account will only enable administrative users created with NoMAD Login. Version: 1.4+",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UserInputMainText": {
+            "title": "User Input Main Text",
+            "description": "Text for the UserInput mechanism. Version: 1.3+",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "NotifyLogStyle": {
+            "title": "Add Notify to management Log File",
+            "description": "Adds the appropriate log file to the the Notify mechanism. (None, Jamf, FileWave, Munki). Version: 1.3+",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Migrate": {
+            "title": "Migrate",
+            "description": "If yes, migrate users. Version: 1.4+",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DenyLocal": {
+            "title": "Deny Local Users",
+            "description": "Determines if local user accounts are allowed to sign in, or if all auth is forced through AD. Version: 1.3+",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "IgnoreSites": {
+            "title": "Ignore Sites",
+            "description": "Ignore sites in AD. This is a compatibility measure for AD installs that have issues with sites. Version: 1.3+",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EULATitle": {
+            "title": "End User License Agreement Title",
+            "description": "Text for the large title in the EULA window. Version: 1.2+",
+            "property_order": 45,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MigrateUsersHide": {
+            "title": "Hidden Migration User",
+            "description": "List of names of users that should be hidden from user migration candidates during selection. Version: 1.4+",
+            "property_order": 50,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DemobilizeSaveAltSecurityIdentities": {
+            "title": "Demobilize Preserve All Security Identities",
+            "description": "If true, the AltSecurityIdentities user record attribute should be preserved, useful when moving from mobile accounts with smart card mapping implemented. Version: 1.4+",
+            "property_order": 55,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BackgroundImage": {
+            "title": "Login Window Background Image",
+            "description": "Path to the background image to be used. Version: 1.1.0+",
+            "property_order": 60,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "PasswordOverwriteSilent": {
+            "title": "Password Overwrite Silent",
+            "description": "When DenyLocal and PasswordOverwriteSilent are enabled and the user does not have a secure token NoLo will force overwrite the users password to the new password. Version: 1.4+",
+            "property_order": 65,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UsernameFieldPlaceholder": {
+            "title": "Username Field Placeholder",
+            "description": "Placeholder text to show in the username textfield. Version: 1.2+",
+            "property_order": 70,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "KeychainCreate": {
+            "title": "Create Keychain",
+            "description": "Create keychain if it does not exist. Version: 1.2+",
+            "property_order": 75,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "CreateAdminUser": {
+            "title": "Create Admin Users",
+            "description": "Will place any local user created at login by NoMAD Login in the local admin. Version: 1.0+",
+            "property_order": 80,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LocalFallback": {
+            "title": "Local Fallback",
+            "description": "When enabled, login fallbacks to local auth if the network is not available. Version: 1.3+",
+            "property_order": 85,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DemobilizeForcePasswordCheck": {
+            "title": "Demobilize Force Password Check",
+            "description": "If true, a password input at the NoMAD login window will be required to demobilize. Version: 1.4+",
+            "property_order": 90,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EnableFDE": {
+            "title": "Enable FileVault on APFS",
+            "description": "On systems using the APFS filesystem, this key will enable FileVault encryption as the user is signing in for the first time. Version: 1.0+",
+            "property_order": 95,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UserProfileImage": {
+            "title": "User Profile Image",
+            "description": "Path to an image to set as the user profile image. Version: 1.2+",
+            "property_order": 100,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "AliasUPN": {
+            "title": "Alias User Principal Name",
+            "description": "If enabled, the user's UserPrincipalName is added as an alias to the local account during account creation. Version: 1.4+",
+            "property_order": 105,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UIDTool": {
+            "title": "UID Tool",
+            "description": "String to determine the path of an executable that is run when a new user is created. It is expected to return the UID that the user should be created with. It passes in the new users username as the first argument, default is to use the built in functionality. Version: 1.4+",
+            "property_order": 110,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DenyLocalExcluded": {
+            "title": "Deny Local User Exclusions",
+            "description": "List of local user shortnames that will be allowed to authenticate locally instead of via AD. Version 1.3+",
+            "property_order": 115,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "AdditionalADDomainList": {
+            "title": "Domain Dropdown List",
+            "description": "List of LDAP servers to display in the pulldown menu in the Login Window. Users can select a domain from the menu and then only enter the shortname in the text field. Version: 1.4+",
+            "property_order": 120,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "UserInputLogo": {
+            "title": "User Input Logo",
+            "description": "Path to a logo file to use for the UserInput mechanism. Version: 1.3+",
+            "property_order": 125,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DefaultSystemInformation": {
+            "title": "Default System Information",
+            "description": "Defines which system information should be showed on login window, by default. (None, Serial, MAC, Hostname, ComputerName, SystemVersion, IP) Version: 1.4+",
+            "property_order": 130,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "AliasNTName": {
+            "title": "Alias NT Name",
+            "description": "If enabled, the user's NT style name is added as an alias to the local account during account creation. Version: 1.4+",
+            "property_order": 135,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PasswordOverwriteOptional": {
+            "title": "Password Overwrite Optional",
+            "description": "When DenyLocal and PasswordOverwriteOptional are enabled and the user does not have a secure token NoLo will prompt the user overwrite the users password to the new password. Version: 1.4+",
+            "property_order": 140,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LoginScreen": {
+            "title": "macOS Style Login Window",
+            "description": "If set to yes, a macOS-style loginscreen will be presented instead of the NoMAD Login loginwindow style. Version: 1.1.0+",
+            "property_order": 145,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "EULAPath": {
+            "title": "End User License Agreement Save Path",
+            "description": "Path to save acceptance records to. Example: /var/db/NoMADLogin/. Version: 1.2+",
+            "property_order": 150,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "AdditionalADDomains": {
+            "title": "Additional Active Directory Domains",
+            "description": "List of domains to append at the loginwindow. If not set, the standard Managed Domain policy will apply. Version: 1.2+",
+            "property_order": 155,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "SecureTokenManagementOnlyEnableFirstUser": {
+            "title": "Only Enable First User",
+            "description": "If enabled, NoMAD Login will only enable the first user that is eligable for a SecureToken, and delete the service account afterwards. Version: 1.4+",
+            "property_order": 160,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SecureTokenManagementPasswordLength": {
+            "title": "Service Account Password Length",
+            "description": "Defines a custom SecureToken service account password length. Version: 1.4+",
+            "property_order": 165,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer",
+                    "options": {
+                        "enum_titles": ["8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32"]
+                    },
+                    "enum": [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32]
+                }
+            ]
+        },
+        "SecureTokenManagementIconPath": {
+            "title": "Secure Token Icon Path",
+            "description": "Path of the icon to be used for the user. Exampe: /Library/Security/SecurityAgentPlugins/NoMADLoginAD.bundle/Contents/Resources/NoMADFDEIcon.png
+",
+            "property_order": 170,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SecureTokenManagementFullName": {
+            "title": "Service Account Full Name",
+            "description": "Defines a custom Full Name for the SecureToken service account. Example: NoMad Login. Version: 1.4+",
+            "property_order": 175,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "LoginLogoAlpha": {
+            "title": "LoginLogoAlpha",
+            "description": "Alpha value of the logo image. Version: 1.3+",
+            "property_order": 180,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer",
+                    "options": {
+                        "enum_titles": ["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+                    },
+                    "enum": [0,1,2,3,4,5,6,7,8,9,10]
+                }
+            ]
+        },
+        "LDAPServers": {
+            "title": "LDAP Servers",
+            "description": "List of LDAP servers that you would like to use for AD authentication instead of using SRV record lookup. Version 1.3+",
+            "property_order": 185,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "EULAText": {
+            "title": "End User License Agreement",
+            "description": "Text to present in the EULA window. Version: 1.2+",
+            "property_order": 190,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "UseCNForFullNameFallback": {
+            "title": "Use User Common Name for Full Name Fallback",
+            "description": "Uses the CN as the fullname on the account when the givenName and sn fields are blank. Version: 1.4+",
+            "property_order": 195,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BackgroundImageAlpha": {
+            "title": "Login Window Background Image Alpha",
+            "description": "Alpha value of the background image. Version: 1.3+",
+            "property_order": 200,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer",
+                    "options": {
+                        "enum_titles": ["0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
+                    },
+                    "enum": [0,1,2,3,4,5,6,7,8,9,10]
+                }
+            ]
+        },
+        "ScriptPath": {
+            "title": "Script Path",
+            "description": "Path to the script or other executable.",
+            "property_order": 205,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "LastUser": {
+            "title": "Last User Shortname",
+            "description": "Shortname of the last user to login. This allows NoMAD to login on first launch. Version: 1.2.1+ NOTE: Setting this in a profile will disable this value from being set on the system.",
+            "property_order": 210,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MessagePasswordSync": {
+            "title": "Password Sync Message",
+            "description": "Message to show when the password needs to sync. Version: 1.4+",
+            "property_order": 215,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "EnableFDERecoveryKeyPath": {
+            "title": "FileVault Recovery Key Path",
+            "description": "String of a folder path where the recovery key will be stored. NoLo will create this folder if it does not already exist. Version: 1.3+",
+            "property_order": 220,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ScriptArgs": {
+            "title": "Script Arguments",
+            "description": "Arguments to be used with the script. <<User>> will be replaced with the current user's shortname, <<First>> with the current user's first name, <<Last>> with the current user's last name, <<Principal>> with the current user's Kerberos principal.",
+            "property_order": 225,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "LoginLogo": {
+            "title": "Login Logo",
+            "description": "Path to the logo to display on the login screen. If set to NONE, no logo will be shown. Version: 1.1.0+",
+            "property_order": 230,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "KeychainReset": {
+            "title": "Reset Keychain if Password Doesn't Match",
+            "description": "Reset keychain if login password doesn't match. Version: 1.2+",
+            "property_order": 235,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "GUIDTool": {
+            "title": "GUID Tool",
+            "description": "String to determine the path of an executable that is run when a new user is created. It is expected to return the GUID that the user should be created with. It passes in the new users username as the first argument, default is to use the built in functionality. Version: 1.4+",
+            "property_order": 240,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ManageSecureTokens": {
+            "title": "Enable Secure Token Management",
+            "description": "This key will enable SecureToken management capabilites in NomadLogin 1.4. This utilizes a service account which can be modified from default using the below optional preferences. Version: 1.4+",
+            "property_order": 245,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "RecursiveGroupLookup": {
+            "title": "Recursive Group Lookup",
+            "description": "If set to yes, group membership lookups should be done recursively. Version: 1.4+",
+            "property_order": 250,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SecureTokenManagementPasswordLocation": {
+            "title": "Service Account Password Storage Path",
+            "description": "Defines a custom password storage location for the SecureToken service account password. Example” /var/db/.nomadLoginSecureTolkenPassword. Version: 1.4+",
+            "property_order": 255,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SecureTokenManagementUsername": {
+            "title": "Service Account User Name",
+            "description": "Defines a a custom username for the SecureToken service account. Example: _nomadlogin. Version: 1.4+",
+            "property_order": 260,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SecureTokenManagementUID": {
+            "title": "Service Account UID",
+            "description": "Defines a custom UID for the SecureToken service account. Example: 400. Version: 1.4+",
+            "property_order": 265,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "DenyLoginUnlessGroupMember": {
+            "title": "Allowed Group Membership User Logins",
+            "description": "List of AD group names. When an AD user is authenticating, only allow login if the user is a member of one of these groups. Version: 1.3+",
+            "property_order": 270,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "GuestUser": {
+            "title": "Allow Guest User Login",
+            "description": "Allows guest users login. Version: 1.4+",
+            "property_order": 275,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UserInputOutputPath": {
+            "title": "User Input / Output Path",
+            "description": "Path where the userinfo.plist will be written. Version: 1.3+",
+            "property_order": 280,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "UseCNForFullName": {
+            "title": "Use User Common Name for Full Name",
+            "description": "Use the the user's CN from AD instead of attempting to create the user name from the first and last name attributes of the user's AD record. Version: 1.3+",
+            "property_order": 285,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "TextFields": {
+            "title": "NT to AD Domain Mappings",
+            "description": "",
+            "property_order": 290,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "LDAPOverSSL": {
+            "title": "LDAP Over SSL",
+            "description": "Determines if NoMAD Login uses LDAP over SSL. Version: 1.0+",
+            "property_order": 295,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "GuestUserAccountPasswordPath": {
+            "title": "Guest User Account Password Path",
+            "description": "The path to write out the guest users randomly generated password. Version: 1.4+",
+            "property_order": 300,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "EULASubTitle": {
+            "title": "End User License Agreement Subtitle",
+            "description": "Text for a subtitle in the EULA window. Version: 1.2+",
+            "property_order": 305,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "GuestUserLast": {
+            "title": "Guest User Last Name",
+            "description": "Defines the last name of the guest user account. Version: 1.4+",
+            "property_order": 310,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "CustomNoMADLocation": {
+            "title": "Custom NoMAD Location",
+            "description": "If defined it specifies the custom location of the application to be given access to the keychain item. Version: 1.4+",
+            "property_order": 315,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "GuestUserFirst": {
+            "title": "Guest User First Name",
+            "description": "Defines the first name of the guest user account. Version: 1.4+",
+            "property_order": 320,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "EnableFDERekey": {
+            "title": "FileVault Personal Recovery Key Rotation",
+            "description": "Determines if the FileVault personal recovery key should be rotated when a valid FileVault user signs in. Version: 1.3+",
+            "property_order": 325,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DemobilizeUsers": {
+            "title": "Demobilize Users",
+            "description": "Will convert a previously cached mobile account from AD into a regular local user account on login. Version: 1.0+",
+            "property_order": 330,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "GuestUserAccounts": {
+            "title": "Guest User Accounts",
+            "description": "List of names that can be entered into the username field to trigger a guest user creation. Version: 1.4+",
+            "property_order": 335,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "PowerControlDisabled": {
+            "title": "Hide Shutdown and Restart",
+            "description": "If set to yes, hides the shutdown and restart buttons. Version: 1.3.1+",
+            "property_order": 340,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "KeychainAddNoMAD": {
+            "title": "Add NoMAD to Keychain",
+            "description": "Add a NoMAD entry into the keychain. Version: 1.2+",
+            "property_order": 345,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "AllowNetworkSelection": {
+            "title": "Show Network Selection",
+            "description": "If enabled, the network selection button is shown. Version: 1.4+",
+            "property_order": 350,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

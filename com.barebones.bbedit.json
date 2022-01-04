@@ -1,0 +1,66 @@
+{
+	"title": "com.barebones.bbedit",
+	"description": "Settings for BBEdit",
+	"properties": {
+        "EnableAutoSave_v2": {
+            "title": "Enable AutoSave",
+            "description": "Document auto-save for crash recovery is on by default, to change this set this to 'false'.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "Select Value Type"
+                }
+            ]
+        },
+        "SUAutomaticallyUpdate": {
+            "title": "Automatic Updates",
+            "description": "Automatically download available updates for BBEdit. When combined with SUEnableAutomaticChecks, BBEdit will automatically check and download these updates. Updates are subsequently installed when the user quits the app.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SUEnableAutomaticChecks": {
+            "title": "Automatic Update Checks",
+            "description": "Automatically check for BBEdit software updates.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "BBEditSerialNumber:13.0": {
+            "title": "BBEdit License v13",
+            "description": "BBEdit 13 license.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "BBEditRegisteredOwner:13.0": {
+            "title": "BBEdit Registered Owner v13",
+            "description": "Organization registered to BBEdit 13 license.",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        }
+	}
+}

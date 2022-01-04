@@ -1,0 +1,18 @@
+{
+	"title": "com.apple.MCXAirPort",
+	"description": "Disables AirPort",
+	"properties": {
+        "DisableAirPort": {
+            "title": "Disable Air Port",
+            "description": "Disables Wireless on the computer.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

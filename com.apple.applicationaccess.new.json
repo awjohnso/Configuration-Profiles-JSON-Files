@@ -1,0 +1,50 @@
+{
+	"title": "com.apple.applicationaccess.new",
+	"description": "Parental Controls: Application Access",
+	"properties": {
+        "familyControlsEnabled": {
+            "title": "Enable application access restrictions",
+            "description": "Set to true to enable application access restrictions.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "pathBlackList": {
+            "title": "Blacklisted Applications Folders",
+            "description": "The user can never launch applications in these folders.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "pathWhiteList": {
+            "title": "Whitelisted Application Folders",
+            "description": "The user can always launch applications in these folders.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        }
+	}
+}

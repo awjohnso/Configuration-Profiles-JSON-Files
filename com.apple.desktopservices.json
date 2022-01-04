@@ -1,0 +1,19 @@
+{
+	"title": "com.apple.desktopservices",
+	"description": "Configures Desktop Services settings",
+	"properties": {
+        "DSDontWriteNetworkStores": {
+            "title": "Prevent .DS_Store file creation on network volumes.",
+            "description": "Prevent .DS_Store file creation when interacting with a remote file server using the Finder.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "default": "true",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

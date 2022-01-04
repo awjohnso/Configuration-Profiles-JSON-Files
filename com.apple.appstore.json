@@ -1,0 +1,54 @@
+{
+	"title": "com.apple.appstore",
+	"description": "Disabler Mac App Store",
+	"properties": {
+        "restrict-store-require-admin-to-install": {
+            "title": "Require Admin To Install",
+            "description": "Restrict app installations to admin users",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "restrict-store-softwareupdate-only": {
+            "title": "Restrict app Installations to software updates only",
+            "description": "Restrict app installations to software updates only.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "restrict-store-disable-app-adoption": {
+            "title": "Disable App Adoption by users",
+            "description": "Disable App Adoption by users",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DisableSoftwareUpdateNotifications": {
+            "title": "Disable software update notifications",
+            "description": "Disable Software Update Notifications",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

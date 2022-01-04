@@ -1,0 +1,102 @@
+{
+	"title": "com.apple.SoftwareUpdate",
+	"description": "Configures Software Update settings",
+	"properties": {
+        "AutomaticCheckEnabled": {
+            "title": "Automatically check for updates",
+            "description": "",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AllowPreReleaseInstallation": {
+            "title": "Allow installation of macOS beta releases",
+            "description": "",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "restrict-software-update-require-admin-to-install": {
+            "title": "Restrict app installatios to admin users",
+            "description": "This key has the same function as the key restrict-store-require-admin-to-install in the com.apple.appstore payload.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ConfigDataInstall": {
+            "title": "Install XProtect, MRT, & Gatekeepr updates automatically",
+            "description": "",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "CriticalUpdateInstall": {
+            "title": "Install security updates automatically",
+            "description": "These are not regular security updates. An example is the OS X NTP Security Update 1.0 update.",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AutomaticallyInstallMacOSUpdates": {
+            "title": "Automatically install macOS updates",
+            "description": "",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AutomaticallyInstallAppUpdates": {
+            "title": "Automatically install App Store app updates",
+            "description": "",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AutomaticDownload": {
+            "title": "Download newly available updates in the background",
+            "description": "",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

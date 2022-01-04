@@ -1,0 +1,62 @@
+{
+	"title": "com.apple.mcxloginscripts",
+	"description": "The payload for configuring scripts to run at login and logout.",
+	"properties": {
+        "skipLoginHook": {
+            "title": "skip Login Hook",
+            "description": "If true, doesn't execute the login scripts during login.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "loginscripts": {
+            "title": "login scripts",
+            "description": "!! DO NOT USE HERE !! An array of one or more dictionaries of scripts to run at user login time.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "logoutscripts": {
+            "title": "logout scripts",
+            "description": "!! DO NOT USE HERE !! An array of one or more dictionaries of scripts to run at user logout time.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "skipLogoutHook": {
+            "title": "skip Logout Hook",
+            "description": "If true, doesn't execute the logout scripts during logout.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

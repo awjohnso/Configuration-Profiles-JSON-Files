@@ -1,0 +1,18 @@
+{
+	"title": "com.apple.NetworkBrowser",
+	"description": "",
+	"properties": {
+        "DisableAirDrop": {
+            "title": "Disable Air Drop",
+            "description": "Disable the use of AirDrop if true. False value is ignored. Default: False",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

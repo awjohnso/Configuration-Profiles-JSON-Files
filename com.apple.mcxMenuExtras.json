@@ -1,0 +1,342 @@
+{
+	"title": "com.apple.mcxMenuExtras",
+	"description": "The payload for configuring menu extras.",
+	"properties": {
+        "iChat.menu": {
+            "title": "iChat",
+            "description": "If true, enables the iChat menu extra.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "TextInput.menu": {
+            "title": "Text Input",
+            "description": "If true, enables the Text Input menu extra.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Battery.menu": {
+            "title": "Battery",
+            "description": "If true, enables the Battery menu extra.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Bluetooth.menu": {
+            "title": "Bluetooth",
+            "description": "If true, enables the Bluetooth menu extra.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "maxWaitSeconds": {
+            "title": "Max Wait Seconds",
+            "description": "The maximum wait, in seconds, for all menu extras to be added or removed. Default: 20",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "Clock.menu": {
+            "title": "Clock",
+            "description": "If true, enables the Clock menu extra.",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "User.menu": {
+            "title": "User",
+            "description": "If true, enables the User menu extra.",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "RemoteDesktop.menu": {
+            "title": "Remote Desktop",
+            "description": "If true, enables the Remote Desktop menu extra.",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Ink.menu": {
+            "title": "Ink",
+            "description": "If true, enables the Ink menu extra.",
+            "property_order": 45,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "TimeMachine.menu": {
+            "title": "Time Machine",
+            "description": "If true, enables the TimeMachine menu extra.",
+            "property_order": 50,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UniversalAccess.menu": {
+            "title": "Universal Access",
+            "description": "If true, enables the Universal Access menu extra.",
+            "property_order": 55,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Volume.menu": {
+            "title": "Volume",
+            "description": "If true, enables the Volume menu extra.",
+            "property_order": 60,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Script Menu.menu": {
+            "title": "Script Menu",
+            "description": "If true, enables the Script menu extra.",
+            "property_order": 65,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PPPoE.menu": {
+            "title": "PPPoE",
+            "description": "If true, enables the PPPoE menu extra.",
+            "property_order": 70,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "IrDA.menu": {
+            "title": "IrDA",
+            "description": "If true, enables the IrDA menu extra.",
+            "property_order": 75,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Spaces.menu": {
+            "title": "Spaces",
+            "description": "If true, enables the Spaces menu extra.",
+            "property_order": 80,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Sync.menu": {
+            "title": "Sync",
+            "description": "If true, enables the Sync menu extra.",
+            "property_order": 85,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Fax.menu": {
+            "title": "Fax",
+            "description": "If true, enables the Fax menu extra.",
+            "property_order": 90,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "AirPort.menu": {
+            "title": "AirPort",
+            "description": "If true, enables the AirPort menu extra.",
+            "property_order": 95,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "WWAN.menu": {
+            "title": "WWAN",
+            "description": "If true, enables the WWAN menu extra.",
+            "property_order": 100,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HomeSync.menu": {
+            "title": "Home Sync",
+            "description": "If true, enables the HomeSync menu extra.",
+            "property_order": 105,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "VPN.menu": {
+            "title": "VPN",
+            "description": "If true, enables the VPN menu extra.",
+            "property_order": 110,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PPP.menu": {
+            "title": "PPP",
+            "description": "If true, enables the PPP menu extra.",
+            "property_order": 115,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "CPU.menu": {
+            "title": "CPU",
+            "description": "If true, enables the CPU menu extra.",
+            "property_order": 120,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "delaySeconds": {
+            "title": "Delay Seconds",
+            "description": "The number of seconds to delay after login before adding or removing menu extras. If the delay is too short, the menu extras don't appear, or disappear from the menu bar. Default: 2.5",
+            "property_order": 125,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "Displays.menu": {
+            "title": "Displays",
+            "description": "If true, enables the Displays menu extra.",
+            "property_order": 130,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PCCard.menu": {
+            "title": "PC Card",
+            "description": "If true, enables the PCCard menu extra.",
+            "property_order": 135,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Eject.menu": {
+            "title": "Eject",
+            "description": "If true, enables the Eject menu extra.",
+            "property_order": 140,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"title": "com.apple.screensaver.user",
+	"description": "The payload for configuring a user's screen-saver settings.",
+	"properties": {
+        "moduleName": {
+            "title": "module Name",
+            "description": "A full path to the screen-saver module to use.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "modulePath": {
+            "title": "module Path",
+            "description": "A full path to the screen-saver module to use.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "idleTime": {
+            "title": "idle Time",
+            "description": "The number of seconds of inactivity before the screen saver activates (0 = Never activate).",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        }
+	}
+}

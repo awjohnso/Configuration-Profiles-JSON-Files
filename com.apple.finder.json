@@ -1,0 +1,114 @@
+{
+	"title": "com.apple.finder",
+	"description": "The payload for configuring Finder settings.",
+	"properties": {
+        "ShowHardDrivesOnDesktop": {
+            "title": "Show Hard Drives On Desktop",
+            "description": "",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ShowExternalHardDrivesOnDesktop": {
+            "title": "Show External Hard Drives On Desktop",
+            "description": "",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ProhibitBurn": {
+            "title": "Prohibit Burn",
+            "description": "If true, disables the Finder's burn support. Default: false",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ShowMountedServersOnDesktop": {
+            "title": "Show Mounted Servers On Desktop",
+            "description": "",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ProhibitEject": {
+            "title": "Prohibit Eject",
+            "description": "",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ProhibitConnectTo": {
+            "title": "Prohibit Connect To",
+            "description": "",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ShowRemovableMediaOnDesktop": {
+            "title": "Show Removable Media On Desktop",
+            "description": "",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "WarnOnEmptyTrash": {
+            "title": "Warn On Empty Trash",
+            "description": "",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ProhibitGoToFolder": {
+            "title": "Prohibit Go To Folder",
+            "description": "",
+            "property_order": 45,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

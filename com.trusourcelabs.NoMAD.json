@@ -1,0 +1,1094 @@
+{
+	"title": "com.trusourcelabs.NoMAD",
+	"description": "https://nomad.menu/help/preferences-and-what-they-do/",
+	"properties": {
+        "LDAPServerList": {
+            "title": "LDAPServerList",
+            "description": "List of LDAP servers for NoMAD to use instead of doing SRV lookups. (2k12.jodapro.com, usaddc2.jodapro.com)",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuGetHelp": {
+            "title": "MenuGetHelp",
+            "description": "Changes the menu text of the Get Help menu item. (Support)",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ADDomain": {
+            "title": "ADDomain",
+            "description": "Defines the AD domain you’re working with (jodapro.com)",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ExportableKey	": {
+            "title": "ExportableKey",
+            "description": "Determines if the private key from any generate certs can be exported. (False)",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MenuFileServers": {
+            "title": "MenuFileServers",
+            "description": "Changes the menu text of the File Servers menu. (“Files”)",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "HideExpirationMessage": {
+            "title": "HideExpirationMessage",
+            "description": "Specifies text to show in the menu bar when the password countdown has been suppressed. (You’re the best!)",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "HomeAppendDomain": {
+            "title": "HomeAppendDomain",
+            "description": "Adds your AD domain to the end of the user’s hold folder. Used for when the home in AD is not fully qualified. (True)",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HideGetSoftware": {
+            "title": "HideGetSoftware",
+            "description": "Determines if the Get Software menu is visible. (True)",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DontShowWelcomeDefaultOn": {
+            "title": "DontShowWelcomeDefaultOn",
+            "description": "Shows the Welcome Screen, but checks the “Don’t show again” box by default. Useful for when you want to show the Welcome screen only once. (True)",
+            "property_order": 45,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LDAPOnly": {
+            "title": "LDAPOnly",
+            "description": "Sets NoMAD to treat the remote server as just an LDAP server and not specifically AD. (True)",
+            "property_order": 50,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "RecursiveGroupLookup": {
+            "title": "RecursiveGroupLookup",
+            "description": "Allows for recursive group lookups in AD to find all nested groups a user may be a member of. (True)",
+            "property_order": 55,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MessageNotConnected": {
+            "title": "MessageNotConnected",
+            "description": "The text in the menu bar to display when NoMAD is not connected to the AD domain. (No dice!)",
+            "property_order": 60,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "HicFix": {
+            "title": "HicFix",
+            "description": "Enables a secondary password change with AD to fix an issue with macOS 10.13.0 with AD-bound mobile accounts. (True)",
+            "property_order": 65,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HideQuit": {
+            "title": "HideQuit",
+            "description": "Determines if the Quit menu is visible. (True)",
+            "property_order": 70,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LoginItem": {
+            "title": "LoginItem",
+            "description": "Determines whether or not to add NoMAD to the user’s start up items. (False)",
+            "property_order": 75,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HideRenew": {
+            "title": "HideRenew",
+            "description": "Determines if the Renew Tickets menu is visible. (True)",
+            "property_order": 80,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DontShowWelcome": {
+            "title": "DontShowWelcome",
+            "description": "Determines if the Welcome window is shown on first launch. (True)",
+            "property_order": 85,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UseKeychainPrompt": {
+            "title": "UseKeychainPrompt",
+            "description": "Will cause NoMAD to force a sign in to NoMAD to caputre the password in the Keychain. (True)",
+            "property_order": 90,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "WifiNetworks": {
+            "title": "WifiNetworks",
+            "description": "SSIDs of wireless networks you would like to associate any certificates created with NoMAD to via an identity preference in the Keychain. (CorpNet)",
+            "property_order": 95,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "IconOff": {
+            "title": "IconOff",
+            "description": "Specifies an icon file to use for when NoMAD is not connected in dark mode.Note: this needs to be a 16×16 image to display correctly. (/usr/local/icons/NoMADOffDark.png)",
+            "property_order": 100,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ConfigureChrome": {
+            "title": "ConfigureChrome",
+            "description": "Tells NoMAD to update your Chrome settings to allow for Kerberos auth with your AD domain. (True)",
+            "property_order": 105,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "PersistExpiration": {
+            "title": "PersistExpiration",
+            "description": "Setting this to true will display the password expiration countdown even when the user is not logged into the domain. (False)",
+            "property_order": 110,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "Template": {
+            "title": "Template",
+            "description": "The certificate template that you’d like to request when using the Windows CA. (User Auth)",
+            "property_order": 115,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "UPCAlert": {
+            "title": "UPCAlert",
+            "description": "Determines if NoMAD will alert the user to Unannounced Password Changes, typically when the password was changed in AD and not from the user’s system. (True)",
+            "property_order": 120,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ChangePasswordType": {
+            "title": "ChangePasswordType",
+            "description": "Determines type of ChangePassword function (Kerberos, Task, URL, App, and None are currently supported)",
+            "property_order": 125,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "HideHelp": {
+            "title": "HideHelp",
+            "description": "Determines if the Get Help menu is visible. (True)",
+            "property_order": 130,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "StateChangeAction": {
+            "title": "StateChangeAction",
+            "description": "Path to a script that will be launched on network changes. (“/Library/Application Support/scripts/notify-and-update.sh”)",
+            "property_order": 135,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "KeychainItems": {
+            "title": "KeychainItemsDebug",
+            "description": "Enbables KeychainItems debugging. Will attempt to update passwords on any sign in through the NoMAD UI and log verbosely as to what’s not working. (True)",
+            "property_order": 140,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ChangePasswordOptions": {
+            "title": "ChangePasswordOptions",
+            "description": "Task, URL or App path for ChangePasswordType (<<serial>>, <<fullname>>, <<shortname>> and <<domain>> are currently supported as substitutions). (“/Applications/Google Chrome.app”)",
+            "property_order": 145,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "GetCertificateAutomatically": {
+            "title": "GetCertificateAutomatically",
+            "description": "Determines if a certificate is automatically requested for a user when they don’t have a valid existing certificate. (True)",
+            "property_order": 150,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LocalPasswordSyncOnMatchOnly": {
+            "title": "LocalPasswordSyncOnMatchOnly",
+            "description": "Determines if the domain password will be synced to the local account only when the account names match. (True)",
+            "property_order": 155,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SignInWindowAlert": {
+            "title": "SignInWindowAlert",
+            "description": "Makes the NoMAD Sign In window the foremost window when a user is not signed in. (True)",
+            "property_order": 160,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UPCAlertAction": {
+            "title": "UPCAlertAction",
+            "description": "Path to a script or other binary to execute when a UPC Alert occurs. (/usr/local/bin/upca.sh)",
+            "property_order": 165,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SignInWindowOnLaunch": {
+            "title": "SignInWindowOnLaunch",
+            "description": "This will force the Sign In window to display when NoMAD launches. (False)",
+            "property_order": 170,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "CaribouTime": {
+            "title": "CaribouTime",
+            "description": "Changes the icon set to Carrie the Caribou (true)",
+            "property_order": 175,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HidePrefs": {
+            "title": "HidePrefs",
+            "description": "Prevents the Preferences menu from being accessible (True)",
+            "property_order": 180,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HideLockScreen": {
+            "title": "HideLockScreen",
+            "description": "Determines if the Lock Screen menu is visible. (True)",
+            "property_order": 185,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MenuRenewTickets": {
+            "title": "MenuRenewTickets",
+            "description": "Changes the menu text of the Renew Tickets menu item. (Renew)",
+            "property_order": 190,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "AutoConfigure": {
+            "title": "AutoConfigure",
+            "description": "Keyword to determine what auto configuration scheme to use (TSL)",
+            "property_order": 195,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ShowHome": {
+            "title": "ShowHome",
+            "description": "Determines whether the AD home share is shown in the menu. (False)",
+            "property_order": 200,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HideAbout": {
+            "title": "HideAbout",
+            "description": "Removes the About menu from NoMAD. (True)",
+            "property_order": 205,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LocalPasswordSync": {
+            "title": "LocalPasswordSync",
+            "description": "Determines if we keep the local password in sync with the network password or not. (True)",
+            "property_order": 210,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SignInWindowOnLaunchExclusions": {
+            "title": "SignInWindowOnLaunchExclusions",
+            "description": "An array of strings for local users that will not be shown the Sign In window automatically. [ituser, ituser2, otheruser]",
+            "property_order": 215,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "LDAPAnonymous": {
+            "title": "LDAPAnonymous",
+            "description": "Determines if NoMAD uses anonymous LDAP binding when getting the user record. (True)",
+            "property_order": 220,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "LDAPOverSSL": {
+            "title": "LDAPOverSSL",
+            "description": "Determines if NoMAD uses LDAP over SSL. (True)",
+            "property_order": 225,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "RenewTickets": {
+            "title": "RenewTickets",
+            "description": "Setting to determine if auto ticket renewal is used (False)",
+            "property_order": 230,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "SelfServicePath": {
+            "title": "SelfServicePath",
+            "description": "Sets a path for an application to be used with the Get Software menu item. (“/Applications/IT Software.app”)",
+            "property_order": 235,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "PasswordExpireCustomAlert": {
+            "title": "PasswordExpireCustomAlert",
+            "description": "Custom alert to show in the menu bar instead of days to go. (Account expiring soon)",
+            "property_order": 240,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "KerberosRealm": {
+            "title": "KerberosRealm",
+            "description": "Defines your Kerberos realm. (JODAPRO.COM)",
+            "property_order": 245,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "GetHelpType": {
+            "title": "GetHelpType",
+            "description": "Determines type of GetHelp function (Bomgar, URL and App are currently supported) (URL)",
+            "property_order": 250,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "X509CA": {
+            "title": "X509CA",
+            "description": "FQDN of the Windows web Certificate Authority you would like to use. (x509.jodapro.com)",
+            "property_order": 255,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuGetSoftware": {
+            "title": "MenuGetSoftware",
+            "description": "Changes the menu text of the Software menu item. (Software)",
+            "property_order": 260,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuUserName": {
+            "title": "MenuUserName",
+            "description": "Changes the menu text of the user name menu item before a user logs in.",
+            "property_order": 265,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MountSharesWithFinder": {
+            "title": "MountSharesWithFinder",
+            "description": "When file shares are set to automount, this mounts them via the Finder instead of via the API. (False)",
+            "property_order": 270,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "DontMatchKerbPrefs": {
+            "title": "DontMatchKerbPrefs",
+            "description": "Determines if the kasspwd server is written out to the com.apple.Kerberos preference domain. (True)",
+            "property_order": 275,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MenuAbout": {
+            "title": "MenuAbout",
+            "description": "Determines the name of the About menu item. (“This Application”)",
+            "property_order": 280,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SecondsToRenew": {
+            "title": "SecondsToRenew",
+            "description": "Setting for how often to renew tickets. (3600)",
+            "property_order": 285,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "HideExpiration": {
+            "title": "HideExpiration",
+            "description": "Hides the password countdown display in the menu bar. (True)",
+            "property_order": 290,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "GetHelpOptions": {
+            "title": "GetHelpOptions",
+            "description": "URL or Path for GetHelpType (<<serial>>, <<fullname>>, <<shortname>> and <<domain>> are currently supported as substitutions) (“/Applications/Google Chrome.app”)",
+            "property_order": 295,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "CustomLDAPAttributes": {
+            "title": "CustomLDAPAttributes",
+            "description": "List of custom attributes to query in AD on each user record lookup. Attributes will be written back to the UserAttributes key. ([ “pwdLastSet”, “yourAttributeHere”])",
+            "property_order": 300,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "HideSignOut": {
+            "title": "HideSignOut",
+            "description": "Determines if the Sign Out menu is visible. (True)",
+            "property_order": 305,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ChangePasswordCommand": {
+            "title": "ChangePasswordCommand",
+            "description": "Script or other binary to run when a password is sucessfully changed. (“/usr/bin/local/scripts/something.bash”)",
+            "property_order": 310,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuGetCertificate": {
+            "title": "MenuGetCertificate",
+            "description": "Changes the menu text of the Get Certificate menu item. (Update Account)",
+            "property_order": 315,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "AutoRenewCert": {
+            "title": "AutoRenewCert",
+            "description": "Sets the number of days to go on a cert before automatically renewing it (30)",
+            "property_order": 320,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "MenuHomeDirectory": {
+            "title": "MenuHomeDirectory",
+            "description": "Changes the menu text of the Home Directory menu item. (Network Home)",
+            "property_order": 325,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "PasswordExpireCustomWarnTime": {
+            "title": "PasswordExpireCustomWarnTime",
+            "description": "Will cause the custom alert to be only shown at a specific threshold, and in yellow. (20)",
+            "property_order": 330,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "LocalPasswordSyncDontSyncLocalUsers": {
+            "title": "LocalPasswordSyncDontSyncLocalUsers",
+            "description": "An array of user names that if they match the current local user, NoMAD won’t synchronize the password regardless of what user logs into AD. ([“bob”, “sam”, “pat”])",
+            "property_order": 335,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "UseKeychain": {
+            "title": "UseKeychain",
+            "description": "Determines whether to store the Kerberos password in the user’s keychain. (True)",
+            "property_order": 340,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UserSwitch": {
+            "title": "UserSwitch",
+            "description": "Ensures that the local user name is the active ticket being used by NoMAD. (False)",
+            "property_order": 345,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MessagePasswordChangePolicy": {
+            "title": "MessagePasswordChangePolicy",
+            "description": "Message text to display in the password change dialog to help the user understand how complext they need to be. (Your password is required to have 128 characters.)",
+            "property_order": 350,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuPasswordExpires": {
+            "title": "MenuPasswordExpires",
+            "description": "Changes the menu text of the password expiration menu item before a user logs in. (Welcome!)",
+            "property_order": 355,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "PasswordExpireCustomAlertTime": {
+            "title": "PasswordExpireCustomAlertTime",
+            "description": "Will cause the custom alert to be only shown at a specific threshold, and in red. (5)",
+            "property_order": 360,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "Verbose": {
+            "title": "Verbose",
+            "description": "Enables verbose logging. (False)",
+            "property_order": 365,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "ConfigureChromeDomain": {
+            "title": "ConfigureChromeDomain",
+            "description": "Tells NoMAD to update your Chrome settings to allow for Kerberos auth with for the set domain. This allows for Chrome to work with domains other than your AD Domain. Note that the domain will be automatically wildcarded, so setting a domain of “nomad.test” will result in *nomad.test being set. Multiple domains are supported, seperate them by “,” (nomad.test)",
+            "property_order": 370,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "LightsOutIKnowWhatImDoing": {
+            "title": "LightsOutIKnowWhatImDoing",
+            "description": "Removes the icon from the menu bar. Note that NoMAD still is in the menu bar, just with no icon and taking up less space. (True)",
+            "property_order": 375,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "IconOn": {
+            "title": "IconOn",
+            "description": "Specifies an icon file to use for when NoMAD is connected. Note: this needs to be a 16×16 image to display correctly. (/usr/local/icons/NoMADOn.png)",
+            "property_order": 380,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "CleanCerts": {
+            "title": "CleanCerts",
+            "description": "Determines if NoMAD should remove extra certs from user’s Keychain. This will leave the 2 newest and the 2 oldest certs in the keychian. (True)",
+            "property_order": 385,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MessageUPCAlert": {
+            "title": "MessageUPCAlert",
+            "description": "Message to be shown in an UPCAlert notification. (Your password was changed elsewhere.)",
+            "property_order": 390,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "IconOnDark": {
+            "title": "IconOnDark",
+            "description": "Specifies an icon file to use for when NoMAD is connected in dark mode. Note: this needs to be a 16×16 image to display correctly. (/usr/local/icons/NoMADOnDark.png)",
+            "property_order": 395,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "LocalPasswordSyncDontSyncNetworkUsers": {
+            "title": "LocalPasswordSyncDontSyncNetworkUsers",
+            "description": "An array of user names that if they match the AD user signing in, NoMAD won’t synchronize the password regardless of what user logs into AD. [“bob”, “sam”, “pat”]",
+            "property_order": 400,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "LDAPType": {
+            "title": "LDAPType",
+            "description": "An indication of what specific LDAP type is in use. Currently only “OD” for Apple’s Open Directory is available. (OD)",
+            "property_order": 405,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MessageLocalSync": {
+            "title": "MessageLocalSync",
+            "description": "Message text for when a user is asked for their local password to sync their network password to their local account. (Please provide your local password.)",
+            "property_order": 410,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SignInWindowAlertTime": {
+            "title": "SignInWindowAlertTime",
+            "description": "Seconds between the SignInWindowAlert making the Sign In window the foremost window. (360)",
+            "property_order": 415,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "TitleSignIn": {
+            "title": "TitleSignIn",
+            "description": "Changes the title of the sign in window. (Password please)",
+            "property_order": 420,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuWelcome": {
+            "title": "MenuWelcome",
+            "description": "Path to a folder enclosing an index.html file and associated resources for displaying as a Welcome screen when running NoMAD. (/usr/local/welcome/)",
+            "property_order": 425,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "PasswordExpireAlertTime": {
+            "title": "PasswordExpireAlertTime",
+            "description": "The threshold, in seconds, for when to start notifying the user about their expiring password – set to 0 to never be bothered, and defaults to 15 days or 1,296,000 seconds. (3600)",
+            "property_order": 430,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "SignOutCommand": {
+            "title": "SignOutCommand",
+            "description": "Path to a script or other binary to execute on sign out. (/usr/local/bin/signout.sh)",
+            "property_order": 435,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "MenuChangePassword": {
+            "title": "MenuChangePassword",
+            "description": "Changes the menu text of the Change Password menu item. (Update Account)",
+            "property_order": 440,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SignInCommand": {
+            "title": "SignInCommand",
+            "description": "Script or command to be run when NoMAD completes a successful sign in to AD. (“/usr/bin/touch /tmp/login”)",
+            "property_order": 445,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        }
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"title": "com.apple.DiscRecording",
+	"description": "Disc burning restrictions require both Disc Burning and Finder payloads Finder (Disc Burning), key: ProhibitBurn.",
+	"properties": {
+        "BurnSupport": {
+            "title": "BurnSupport",
+            "description": "(Required) If off, disables disc burning. If on, allows normal default operation. Setting this key to on doesn't enable disc burn support if it has already been disabled by other mechanisms or preferences. It also must be enabled with the Finder profile. If authenticate, requires authentication. Possible values: off, authenticate, on.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        }
+	}
+}

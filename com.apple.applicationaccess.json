@@ -1,0 +1,558 @@
+{
+	"title": "com.apple.applicationaccess",
+	"description": "The payload for configuring restrictions on a device.",
+	"properties": {
+        "enforcedSoftwareUpdateNonOSDeferredInstallDelay": {
+            "title": "Enforced Software Update Non OS Deferred Install Delay",
+            "description": "This restriction allows the admin to set how many days to delay an app software update on the device. When this restriction is in place the user sees a non-OS software update only after the specified delay after the release of the software. This value controls the delay for forceDelayedAppSoftwareUpdates. Available in macOS 11.3 and later. "Default: 30, Minimum: 1, Maximum: 90"",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "allowSpotlightInternetResults": {
+            "title": "Allow Spotlight Internet Results",
+            "description": "If false, disables Spotlight Internet search results in Siri Suggestions. Available in macOS 10.11 and later. Default: true",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "enforcedSoftwareUpdateMinorOSDeferredInstallDelay": {
+            "title": "Enforced Software Update Minor OS Deferred Install Delay",
+            "description": "This restriction allows the admin to set how many days to delay a minor OS software update on the device. When this restriction is in place the user see a software update only after the specified delay after the release of the software update. This value controls the delay for forceDelayedSoftwareUpdates. Available in macOS 11.3 and later. "Default: 30, Minimum: 1, Maximum: 90"",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "allowRemoteScreenObservation": {
+            "title": "Allow Remote Screen Observation",
+            "description": "If false, disables remote screen observation by the Classroom app. Nest this key beneath allowScreenShot as a subrestriction. If allowScreenShot is set to false, the Classroom app doesn't observe remote screens. Required a supervised device until macOS 10.15. Available in macOS 10.14.4 and later. Default: true",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowAirDrop": {
+            "title": "Allow Air Drop",
+            "description": "If false, disables AirDrop. Requires a supervised device. Available in macOS 10.13 and later. Default: true",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceDelayedSoftwareUpdates": {
+            "title": "Force Delayed Software Updates",
+            "description": "If true, delays user visibility of software updates. In macOS, seed build updates are allowed, without delay The delay is 30 days unless enforcedSoftwareUpdateDelay is set to another value. Available in macOS 10.13 and later. Default: false.",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudReminders": {
+            "title": "Allow Cloud Reminders",
+            "description": "If false, disables iCloud Reminder services. Available in macOS 10.12 and later. Default: true",
+            "property_order": 35,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudMail": {
+            "title": "Allow Cloud Mail",
+            "description": "If false, disables iCloud Mail services. Available in macOS 10.12 and later. Default: true",
+            "property_order": 40,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceClassroomUnpromptedAppAndDeviceLock": {
+            "title": "Force Classroom Unprompted AppA nd Device Lock",
+            "description": "If true, allows the teacher to lock apps or the device without prompting the student. Requires a supervised device. Available in macOS 10.14.4 and later. Default: false",
+            "property_order": 45,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowDictation": {
+            "title": "Allow Dictation",
+            "description": "If false, disallows dictation input. Requires a supervised device. Available in macOS 10.13 and later. Default: true",
+            "property_order": 50,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowAutoUnlock": {
+            "title": "Allow Auto Unlock",
+            "description": "If false, disallows auto unlock. Available in macOS 10.12 and later. Default: true",
+            "property_order": 55,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowWallpaperModification": {
+            "title": "Allow Wallpaper Modification",
+            "description": "If false, prevents wallpaper from being changed. Requires a supervised device. Available in macOS 10.13 and later. Default: True",
+            "property_order": 60,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceClassroomUnpromptedScreenObservation": {
+            "title": "Force Classroom Unprompted Screen Observation",
+            "description": "If true and ScreenObservationPermissionModificationAllowed is also true in the Education payload, a student enrolled in a managed course via the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student. Requires a supervised device. Available in macOS 10.14.4 and later. Default: false",
+            "property_order": 65,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceClassroomRequestPermissionToLeaveClasses": {
+            "title": "Force Classroom Request Permission To Leave Classes",
+            "description": "If true, a student enrolled in an unmanaged course through Classroom requests permission from the teacher when attempting to leave the course. Requires a supervised device. Available in macOS 10.14.4 and later. Default: false",
+            "property_order": 70,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowPasswordSharing": {
+            "title": "Allow Password Sharing",
+            "description": "If false, disables sharing passwords with the Airdrop Passwords feature. Requires a supervised device. Available in macOS 10.14 and later. Default: true",
+            "property_order": 75,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCamera": {
+            "title": "Allow Camera",
+            "description": "If false, disables the camera, and its icon is removed from the Home screen. Users are unable to take photographs. This restriction is deprecated on unsupervised devices and will be supervised only in a future release.  Available in macOS 10.11 and later. Default: true",
+            "property_order": 80,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowFingerprintForUnlock": {
+            "title": "Allow Finger print For Unlock",
+            "description": "If false, prevents Touch ID or Face ID from unlocking a device. Available in macOS 10.12.4 and later. Default: true",
+            "property_order": 85,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowActivityContinuation": {
+            "title": "Allow Activity Continuation",
+            "description": "If false, disables activity continuation. Available in macOS 10.15 and later. Default: true",
+            "property_order": 90,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceClassroomAutomaticallyJoinClasses": {
+            "title": "Force ClassroomA utomatically Join Classes",
+            "description": "If true, automatically gives permission to the teacher's requests without prompting the student. Requires a supervised device. Available in and macOS 10.14.4 and later. Default: false",
+            "property_order": 95,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudPhotoLibrary": {
+            "title": "Allow Cloud Photo Library",
+            "description": "If false, disables iCloud Photo Library. Any photos not fully downloaded from iCloud Photo Library to the device are removed from local storage. Available in macOS 10.12 and later. Default: true",
+            "property_order": 100,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowDiagnosticSubmission": {
+            "title": "Allow Diagnostic Submission",
+            "description": "If false, prevents the device from automatically submitting diagnostic reports to Apple. Available in macOS 10.13 and later. Also available for user enrollment. Default: true",
+            "property_order": 105,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudAddressBook": {
+            "title": "Allow Cloud AddressBook",
+            "description": "If false, disables iCloud Address Book services. Available in macOS 10.12 and later. Default: true",
+            "property_order": 110,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowPasscodeModification": {
+            "title": "Allow Passcode Modification",
+            "description": "If false, prevents the device passcode from being added, changed, or removed. Requires a supervised device. Available in macOS 10.13 and later. Default: True",
+            "property_order": 115,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "enforcedFingerprintTimeout": {
+            "title": "Enforced Fingerprint Timeout",
+            "description": "The value, in seconds, after which the fingerprint unlock will require a password to authenticate. The default value is 48 hours. Default: 172800",
+            "property_order": 120,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "allowCloudCalendar": {
+            "title": "Allow Cloud Calendar",
+            "description": "If false, disables iCloud Calendar services. Available in macOS 10.12 and later. Default: true",
+            "property_order": 125,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowGameCenter": {
+            "title": "Allow Game Center",
+            "description": "If false, disables Game Center, and its icon is removed from the Home screen. Requires a supervised device. Available in macOS 10.13 and later. Default: true",
+            "property_order": 130,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudNotes": {
+            "title": "Allow Cloud Notes",
+            "description": "If false, disables iCloud Notes services. Available in macOS 10.12 and later. Default: true",
+            "property_order": 135,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowiTunesFileSharing": {
+            "title": "Allow iTunes File Sharing",
+            "description": "If false, disables iTunes file sharing services. Available in macOS 10.13 and later. Default: true",
+            "property_order": 140,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "safariAllowAutoFill": {
+            "title": "Safari Allow Auto Fill",
+            "description": "If false, disables Safari AutoFill for passwords, contact info, and credit cards and also prevents the Keychain from being used for AutoFill. Though third-party password managers are allowed and apps can use AutoFill. Available in macOS 10.13 and later. Default: true",
+            "property_order": 145,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudDocumentSync": {
+            "title": "Allow Cloud Document Sync",
+            "description": "If false, disables document and key-value syncing to iCloud. Available in macOS 10.11 and later. Default: true",
+            "property_order": 150,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceDelayedAppSoftwareUpdates": {
+            "title": "Force Delayed App Software Updates",
+            "description": "If true, delays user visibility of non-OS Software Updates. Requires a supervised device. Visibility of Operating System updates is controlled through forceDelayedSoftwareUpdates. The delay is 30 days unless enforcedSoftwareUpdateDelay is set to another value. Available in macOS 11 and later. Default: false",
+            "property_order": 155,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowPasswordProximityRequests": {
+            "title": "Allow Password Proximity Requests",
+            "description": "If false, disables requesting passwords from nearby devices. Requires a supervised device. Available in macOS 10.14 and later. Default: true",
+            "property_order": 160,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "enforcedSoftwareUpdateDelay": {
+            "title": "Enforced Softwar eUpdate Delay",
+            "description": "Sets how many days to delay a software update on the device. With this restriction in place, the user doesn't see a software update until the specified number of days after the software update release date. This value is used by forceDelayedAppSoftwareUpdates and forceDelayedSoftwareUpdates. Available in macOS 10.13.4 and later. "Default: 30, Minimum: 1, Maximum: 90"",
+            "property_order": 165,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "allowCloudDesktopAndDocuments": {
+            "title": "Allow Cloud Desktop And Documents",
+            "description": "If false, disables cloud desktop and document services. Available in macOS 10.12.4 and later. Default: true",
+            "property_order": 170,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowPasswordAutoFill": {
+            "title": "Allow Password Auto Fill",
+            "description": "If false, disables the AutoFill Passwords feature in iOS (with Keychain and third-party password managers) and the user isn't prompted to use a saved password in Safari or in apps. This restriction also disables Automatic Strong Passwords, and strong passwords are no longer suggested to users. It does not prevent AutoFill for contact info and credit cards in Safari. Requires a supervised device. Available in macOS 10.14 and later. Default: true",
+            "property_order": 175,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowMusicService": {
+            "title": "Allow Music Service",
+            "description": "If false, disables the Music service, and the Music app reverts to classic mode. Requires a supervised device. Available in macOS 10.12 and later. Default: true",
+            "property_order": 180,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowScreenShot": {
+            "title": "Allow Screen Shot",
+            "description": "If false, disables saving a screenshot of the display and capturing a screen recording. It also disables the Classroom app from observing remote screens. Available in macOS 10.14.4 and later. Also available for user enrollment. Default: true",
+            "property_order": 185,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowEraseContentAndSettings": {
+            "title": "Allow Erase Content And Settings",
+            "description": "If false, disables the Erase All Content And Settings option in the Reset UI. Requires a supervised device. Available in macOS 12 and later. Default: true",
+            "property_order": 190,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowAddingGameCenterFriends": {
+            "title": "Allow Adding Game Center Friends",
+            "description": "If false, prohibits adding friends to Game Center. As of iOS 13, requires a supervised device. Available in macOS 10.13 and later. Default: true",
+            "property_order": 195,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowMultiplayerGaming": {
+            "title": "Allow Multiplayer Gaming",
+            "description": "If false, prohibits multiplayer gaming. Requires a supervised device. Available in macOS 10.13 and later. Default: true",
+            "property_order": 200,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "enforcedSoftwareUpdateMajorOSDeferredInstallDelay": {
+            "title": "Enforced Software Update Major OS Deferred Install Delay",
+            "description": "This restriction allows the admin to set how many days to delay a major software update on the device. When this restriction is in place the user sees a software update only after the specified delay after the release of the software update. This value controls the delay for forceDelayedMajorSoftwareUpdates. Available in macOS 11.3 and later. "Default: 30, Minimum: 1, Maximum: 90"",
+            "property_order": 205,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer"
+                }
+            ]
+        },
+        "allowAirPrint": {
+            "title": "Allow Air Print",
+            "description": "If false, disables AirPrint.  Requires a supervised device. Available in iOS 11 and later. Default: true",
+            "property_order": 210,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudBookmarks": {
+            "title": "Allow Cloud Bookmarks",
+            "description": "If false, disables iCloud Bookmark sync. Available in macOS 10.12 and later. Default: true",
+            "property_order": 215,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudKeychainSync": {
+            "title": "Allow Cloud Keychain Sync",
+            "description": "If false, disables iCloud keychain synchronization. This restriction is deprecated on unsupervised devices and will be supervised only in a future release. Available in macOS 10.12 and later. Default: true",
+            "property_order": 220,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "forceDelayedMajorSoftwareUpdates": {
+            "title": "Force Delayed Major Software Updates",
+            "description": "If set to true, delays user visibility of major OS Software Updates. Available in macOS 11.3 and later. Default: false",
+            "property_order": 225,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "allowCloudPrivateRelay": {
+            "title": "Allow Cloud Private Relay",
+            "description": "If false, disables iCloud Private Relay. Default: true",
+            "property_order": 230,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}
