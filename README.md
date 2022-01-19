@@ -20,4 +20,3 @@ Building JSON files, and loading them into JAMF in the **Configuration Profiles*
 ### Issues
 
 Complex Profiles are difficult or sometimes not possible with a JSON file.
-
